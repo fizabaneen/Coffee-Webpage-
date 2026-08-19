@@ -1,4 +1,3 @@
-/* Base settings to clean spaces */
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +5,17 @@
 }
 
 body {
-    background-color: #3d141d; /* Coffee dark background color */
+    background-color: #3d141d; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navbar overall layout spacing */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 80px; /* Adjust left-right padding to match image constraints */
+    padding: 25px 80px;
 }
 
-/* Logo container setup */
 .logo-container {
     display: flex;
     align-items: center;
@@ -26,7 +23,7 @@ body {
 }
 
 .logo {
-    width: 50px; /* Perfect sizing matching the mockup layout */
+    width: 50px;
     height: auto;
 }
 
@@ -36,22 +33,35 @@ body {
     font-weight: bold;
 }
 
-/* Navigation items layout configuration */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px; /* Even spacing across tabs */
-}
-
-/* Designing clickable anchors inside text container flags */
 .nav-links a {
     color: white;
-    text-decoration: none; /* Stripping browser baseline underlines */
+    text-decoration: none;
+    margin-left: 20px;
     font-size: 18px;
-    transition: color 0.2s ease;
+    taransition: color 0.3s ease;
 }
 
-/* Hover highlights for enhanced interaction mechanics */
 .nav-links a:hover {
-    color: #ec9428; /* Highlights using primary theme color values */
+    color: #ec9428;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
