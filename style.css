@@ -1,3 +1,6 @@
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
@@ -5,20 +8,34 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    background-color: #3d141d; 
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden; /* Screen se bahar scroll hone se rokne ke liye */
+    width: 100%;
+    min-height: 100%;
 }
 
-/* Navbar */
+body {
+    background-color: #3d141d;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 80px; 
+
+    padding: 15px 80px;
 }
+
+
+/* Logo */
 
 .logo-container {
     display: flex;
@@ -27,7 +44,7 @@ body {
 }
 
 .logo {
-    width: 50px; 
+    width: 50px;
     height: auto;
 }
 
@@ -37,96 +54,207 @@ body {
     font-weight: bold;
 }
 
+
+/* Navigation */
+
 .nav-links {
     display: flex;
+    align-items: center;
+    gap: 40px;
     list-style: none;
-    gap: 40px; 
 }
 
 .nav-links a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 18px;
+
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #ec9428; 
+    color: #ec9428;
 }
 
-/* New Hero Container for perfect alignment */
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero-container {
+    min-height: calc(100vh - 90px);
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 60px 100px; /* Side spaces controls yahan se hote hain */
-    gap: 40px;
+    justify-content: space-between;
+
+    padding: 20px 80px 40px;
 }
 
-/* Left Text Side */
+
+/* =========================
+   TEXT
+========================= */
+
 .text {
-    flex: 1;
-    max-width: 550px; /* Text ko zyada phailne nahi dega */
+    width: 52%;
 }
 
 .heading1 {
-    font-family: Arial, Helvetica, sans-serif; /* Quotes hata diye */
     color: #ec9428;
+
+    font-family: Georgia, "Times New Roman", serif;
+
     font-style: italic;
-    font-size: 32px; 
-    font-weight: 400; 
-    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-bottom: 12px;
 }
 
 .heading2 {
-    font-family: Arial, Helvetica, sans-serif; /* Quotes hata diye */
     color: white;
-    font-size: 48px;   
-    line-height: 1.2; /* Text overlapping fix ho gayi */
-    margin-bottom: 20px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+    line-height: 1.25;
+
+    margin-bottom: 18px;
 }
 
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ddc; /* Thoda soft white taake parhne mein aasan ho */
+.text p {
+    color: white;
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 30px;
+
+    max-width: 650px;
+
+    margin-bottom: 25px;
 }
 
-/* Buttons Styling */
+
+/* =========================
+   BUTTONS
+========================= */
+
 .button-group {
     display: flex;
-    gap: 20px;
+    gap: 8px;
 }
 
 .button {
-    background-color: #ec9428; 
+    background-color: #ec9428;
+
     color: white;
-    padding: 15px 35px; 
+
+    padding: 15px 30px;
+
     font-size: 18px;
+
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
+
     cursor: pointer;
-    font-weight: bold;
-    transition: all 0.2s ease;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
 }
 
 .button:hover {
-    background-color: #d17c1f; 
+    background-color: #d17c1f;
+    transform: translateY(-2px);
 }
 
-/* Image Side */
+
+/* =========================
+   COFFEE IMAGE
+========================= */
+
 .image {
-    flex: 1;
+    width: 48%;
+
     display: flex;
-    justify-content: flex-end; /* Image ko right side push karega */
+    justify-content: center;
+    align-items: center;
 }
 
 .coffee-cup {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
     height: auto;
-    object-fit: contain;
-    /* Agar image ko thoda aur chota ya bada karna ho to width adjust karein */
-    width: 500px; 
+
+    display: block;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-container {
+        padding: 30px;
+    }
+
+    .heading2 {
+        font-size: 34px;
+    }
+
+    .coffee-cup {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+
+        min-height: auto;
+
+        text-align: center;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .heading2 {
+        font-size: 32px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
 }
