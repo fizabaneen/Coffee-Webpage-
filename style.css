@@ -1,0 +1,57 @@
+/* Base settings to clean spaces */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d141d; /* Coffee dark background color */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar overall layout spacing */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px; /* Adjust left-right padding to match image constraints */
+}
+
+/* Logo container setup */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 50px; /* Perfect sizing matching the mockup layout */
+    height: auto;
+}
+
+.logo_text {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Navigation items layout configuration */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* Even spacing across tabs */
+}
+
+/* Designing clickable anchors inside text container flags */
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Stripping browser baseline underlines */
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+/* Hover highlights for enhanced interaction mechanics */
+.nav-links a:hover {
+    color: #ec9428; /* Highlights using primary theme color values */
+}
