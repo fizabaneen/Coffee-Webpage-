@@ -236,7 +236,7 @@ hr {
 
 .menu {
     background-color: #1D1D1B;
-    height: 700px;
+    height: 1000px;
 }
  
 .head4 {
@@ -245,4 +245,20 @@ hr {
     padding-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
+ 
+.foodImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.foodImages img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+ 
+ 
  
