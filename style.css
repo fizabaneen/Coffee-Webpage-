@@ -182,7 +182,7 @@ body {
 
 
 .aboutUS {
-    background-color: white;
+    background-color: #faeaea;
     height: 500px;
 }
 
@@ -197,18 +197,28 @@ body {
 .AboutText {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    margin-top: -250px;
-    margin-left: 500px;
+    margin-top: -280px;
+    margin-left: 550px;
+    /* margin-bottom: 600px; */
+   
     
    
 }
 
+.hr {
+    width: 100px;
+    margin-left: 340px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
 
 .para{
     text-transform: none;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
+    margin-left: 10px;
 }
 
 
@@ -219,46 +229,183 @@ body {
 }
 
 hr {
-    width: 80px;
-    margin: 8px auto 20px;
+   width: 20%;
+    margin: 30px auto 50px;
 }
 
 
 .socialIcons img{
     width: 30px;
-    margin-left:10px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+    margin-right: 20px;
 }
 
  .socialIcons{
-    margin-left: 320px;
+    margin-left: 350px;
 }
 /* Food Menu */
 
 .menu {
     background-color: #1D1D1B;
-    height: 1000px;
+    padding: 50px 80px;
+    min-height: 1000px;
 }
- 
+
 .head4 {
     text-align: center;
     color: white;
-    padding-top: 50px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
+.menu hr {
+     margin-top: 10px;
+ width: 80px;
+}
+
+
+/* 3 cards in one row */
 .foodImages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
+    gap: 70px 50px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.foodImages img {
-    width: 300px;
-    height: 300px;
+
+/* Each card */
+.foodCard {
+    text-align: center;
+    color: white;
+}
+
+
+/* Images */
+.foodCard img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+/* Heading */
+.foodCard h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+
+/* Paragraph */
+.foodCard p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    max-width: 250px;
+    margin: auto;
+}
+
+
+
+.Testimonials {
+    background-color: #faeaea;
+    height: 500px;
+}
+
+.head5 {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-ser;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.hr1 {
+    margin-top: 10px;
+    width: 80px;
+
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.person {
+    text-align: center;
+}
+
+.person img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
+.person h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.person p {
+    margin: 0;
+}
+
+/* gallery sec */
+
+.foodgallery {
+    background-color: white;
+    height: 800px;
+}
+
+.head6 {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-ser;
+    padding-top: 50px;
+        text-transform: uppercase;
+}
+
+.hr2 {
+     margin-top: 10px;
+     width: 80px;
+}
+
+.Gallery3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-left: 50px;
+    
+}
+
+.Gallery3 img {
+    width: 350px;
+    height: 280px;
+    
+    border-radius: 10px;
+}
  
- 
- 
+.Gallery3 img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px #ec9428;
+}
+
+
+
+
+
+
+
+
+
