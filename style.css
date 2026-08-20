@@ -6,16 +6,10 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    width: 100%;
-    min-height: 100%;
-}
-
 body {
     background-color: #3d141d;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -76,7 +70,7 @@ body {
 ========================= */
 
 .hero-container {
-    min-height: calc(100vh - 90px);
+    /* min-height: calc(100vh - 90px); */
 
     display: flex;
     align-items: center;
@@ -91,7 +85,7 @@ body {
 ========================= */
 
 .text {
-    width: 52%;
+    width: 40%;
 }
 
 .heading1 {
@@ -100,7 +94,7 @@ body {
     font-family: Georgia, "Times New Roman", serif;
 
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
 
     margin-bottom: 12px;
@@ -111,7 +105,7 @@ body {
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 42px;
+    font-size: 30px;
     line-height: 1.25;
 
     margin-bottom: 18px;
@@ -122,10 +116,10 @@ body {
 
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 19px;
+    line-height: 1.5;
 
-    max-width: 650px;
+    /* max-width: 650px; */
 
     margin-bottom: 25px;
 }
@@ -184,6 +178,54 @@ body {
     display: block;
 }
 
+.aboutUS {
+    background-color: white;
+    height: 600px;
+}
+
+.aboutPic{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.AboutText {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: -250px;
+    margin-left: 500px;
+    
+   
+}
+
+
+.para{
+    text-transform: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.head3 {
+    font-size: 30px;
+    margin-left: 300px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 80px;
+    margin: 8px auto 20px;
+}
+
+ 
+ 
+ 
+
+   
+   
 
  
  
