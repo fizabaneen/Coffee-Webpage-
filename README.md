@@ -5,7 +5,7 @@ A simple and modern **Coffee Landing Page** created using **HTML and CSS**. This
 ## 🌐 Live Preview
 
 **[View Live Website](YOUR-LIVE-LINK-HERE)** 
-
+ 
 ## 📸 Preview
 
 ![Coffee Landing Page](assets/images/coffee.png)
