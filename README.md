@@ -6,7 +6,7 @@ A simple and modern **Coffee Landing Page** created using **HTML and CSS**. This
 
 **Not_Ready_yet** 
  
-## 📸 Preview
+## 📸 Preview 
 
 ![Coffee Landing Page](https://fizabaneen.github.io/Coffee-Webpage-/)
 
