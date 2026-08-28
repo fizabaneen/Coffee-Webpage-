@@ -3,7 +3,7 @@
 A simple and modern **Coffee Landing Page** created using **HTML and CSS**. This project was built to practice frontend development, webpage structure, styling, typography, and clean UI design.
 
 ## 🌐 Live Preview 
-
+ 
 **Not_Ready_yet** 
  
 ## 📸 Preview 
