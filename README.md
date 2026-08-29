@@ -2,13 +2,12 @@
 
 A simple and modern **Coffee Landing Page** created using **HTML and CSS**. This project was built to practice frontend development, webpage structure, styling, typography, and clean UI design.
 
-## 🌐 Live Preview
-
-**[View Live Website](YOUR-LIVE-LINK-HERE)** 
+## 🌐 Live Preview 
  
-## 📸 Preview
+**Not_Ready_yet** 
+  
+## 📸 Preview 
 
-![Coffee Landing Page](assets/images/coffee.png)
 
 ## ✨ Features
 
@@ -83,16 +82,14 @@ This project helped me practice:
 
 ## 👩‍💻 Author
 
-**Your Name**
-
+**Fiza Baneen**
 Frontend Developer | HTML & CSS Learner
 
 ### Connect With Me
 
-* 💼 LinkedIn: **YOUR-LINKEDIN-LINK**
-* 🐦 X: **YOUR-X-LINK**
-* 💻 GitHub: **YOUR-GITHUB-LINK**
-
+* 💼 LinkedIn: https://www.linkedin.com/in/fizabaneen
+* 🐦 X: https://www.x.com/fizabaneen
+* 💻 GitHub: https://www.github.com/fizabeneen
 ---
 
 ⭐ If you like this project, consider giving the repository a star!
