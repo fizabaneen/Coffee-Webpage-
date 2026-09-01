@@ -9,7 +9,7 @@ A simple and modern **Coffee Landing Page** created using **HTML and CSS**. This
 ## 📸 Preview 
 
  
-## ✨ Features
+## ✨ Features   
 
 * ☕ Coffee-themed landing page
 * 🎨 Clean and modern UI
