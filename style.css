@@ -167,27 +167,32 @@ hr {
 =========================== */
 .aboutUS {
     display: grid;
-    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+    grid-template-columns: 1fr 1.3fr;
     align-items: center;
     gap: 50px;
-    padding: 70px max(20px, 8vw);
+    padding: 80px max(30px, 8vw);
     background-color: #faeaea;
 }
 
 .aboutPic {
-    width: min(100%, 300px);
-    height: auto;
-    border-radius: 50%;
+    width: 100%;
+    max-width: 420px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
     margin: 0 auto;
     display: block;
+    border: 5px solid #ec9428;
+    box-shadow: 0 12px 40px rgba(236, 148, 40, 0.25);
 }
 
 .AboutText {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    padding: 32px;
-    border-radius: 14px;
+    padding: 40px;
+    border-radius: 18px;
     background-color: white;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
 .head3 {
@@ -576,8 +581,10 @@ hr {
     }
 
     .aboutPic {
-        width: min(80vw, 240px);
+        width: min(90vw, 360px);
+        height: 260px;
         margin: 0 auto;
+        border-radius: 16px;
     }
 
     .head3 {
