@@ -479,17 +479,175 @@ hr {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #1D1D1B;
+    background-color: #3d141d;
     color: white;
     cursor: pointer;
     font-size: 14px;
 }
 
-.contactForm button:hover {
-    background-color: #ec9428;
+
+.footer {
+    display: flex;
+    background-color: #252525;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.footer img {
+    margin-left: 8px;
+}
 
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 16px;
+    }
 
+    .nav-links {
+        gap: 14px 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 40px 20px 60px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+    }
+
+    .heading1 {
+        font-size: 34px;
+    }
+
+    .heading2 {
+        font-size: 25px;
+    }
+
+    .heading2 br {
+        display: none;
+    }
+
+    .text p {
+        font-size: 17px;
+    }
+
+    .button-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutUS {
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .aboutPic {
+        width: min(80vw, 300px);
+        height: auto;
+        margin: 0 auto 30px;
+    }
+
+    .AboutText {
+        margin: 0;
+    }
+
+    .head3 {
+        margin: 0 0 15px;
+    }
+
+    .hr {
+        margin: 0 auto 30px;
+    }
+
+    .para {
+        margin: 0;
+    }
+
+    .socialIcons {
+        margin: 25px 0 0;
+    }
+
+    .socialIcons img {
+        margin: 0 6px;
+    }
+
+    .menu {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .foodImages {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .Testimonials {
+        height: auto;
+        padding: 0 20px 60px;
+    }
+
+    .images {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .foodgallery {
+        height: auto;
+        padding: 0 20px 70px;
+    }
+
+    .Gallery3 {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    .Gallery3 img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: 5 / 4;
+        object-fit: cover;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+
+    .footer {
+        height: auto;
+        padding: 18px 20px;
+        gap: 14px;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 14px;
+    }
+}
 
 
