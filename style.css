@@ -176,12 +176,12 @@ hr {
 
 .aboutPic {
     width: 100%;
-    max-width: 420px;
+    /* max-width: 420px; */
     height: 380px;
-    object-fit: cover;
-    border-radius: 20px;
+    /* object-fit: cover; */
+    border-radius: 50%;
     margin: 0 auto;
-    display: block;
+    /* display: block; */
     border: 5px solid #ec9428;
     box-shadow: 0 12px 40px rgba(236, 148, 40, 0.25);
 }
