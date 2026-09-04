@@ -1,413 +1,45 @@
+/* ===========================
+   RESET & BASE
+=========================== */
 * {
     margin: 0;
-    padding: 0;  
-    box-sizing: border-box; 
-} 
-  
-body {
-    background-color: #3d141d;
-    font-family: Arial, Helvetica, sans-serif; 
-    /* overflow-x: hidden; */
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-
-/* Final responsive grid overrides */
-.hero-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr);
-    gap: 40px;
-    max-width: 1280px;
-    min-height: 560px;
-    margin: 0 auto;
-    padding: 70px 60px;
+body {
+    background-color: #3d141d;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero-container > .text,
-.hero-container > .image {
-    width: auto;
-    padding: 32px;
-    border-radius: 14px;
+hr {
+    width: 80px;
+    margin: 10px auto 40px;
+    border: none;
+    border-top: 4px solid #ec9428;
 }
 
-.hero-container > .text {
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-.hero-container > .image {
-    background-color: rgba(236, 148, 40, 0.12);
-}
-
-.aboutUS {
-    display: grid;
-    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
-    align-items: center;
-    gap: 50px;
-    height: auto;
-    padding: 70px max(20px, 8vw);
-}
-
-.aboutPic {
-    width: min(100%, 330px);
-    height: auto;
-    margin: 0 auto;
-}
-
-.AboutText {
-    margin: 0;
-    padding: 32px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.head3 {
-    margin: 0 0 15px;
-}
-
-.AboutText .hr {
-    margin: 0 auto 30px;
-}
-
-.para {
-    margin: 0;
-}
-
-.socialIcons {
-    margin: 28px 0 0;
-    text-align: center;
-}
-
-.socialIcons img {
-    margin: 0 6px;
-}
-
-.menu {
-    min-height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.foodImages {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-}
-
-.foodCard {
-    min-height: 330px;
-    padding: 24px 18px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.foodCard img {
-    width: min(100%, 180px);
-    height: 180px;
-}
-
-.Testimonials {
-    height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 24px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.person {
-    padding: 28px 18px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.foodgallery {
-    height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.Gallery3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.Gallery3 img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.contact {
-    padding: 70px max(20px, 6vw);
-}
-
-.contactContainer {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 1100px;
-}
-
-.contactInfo,
-.contactForm {
-    width: auto;
-    padding: 32px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.footer {
-    min-height: 70px;
-    height: auto;
-    padding: 18px 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    text-align: center;
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    .foodImages,
-    .Gallery3 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-container,
-    .aboutUS,
-    .contactContainer {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-container {
-        min-height: auto;
-        padding: 40px 20px 60px;
-    }
-
-    .aboutUS {
-        gap: 30px;
-    }
-
-    .footer {
-        grid-template-columns: 1fr;
-    }
-}
-/* Responsive card and grid layout */
-.hero-container,
-.aboutUS,
-.menu,
-.Testimonials,
-.foodgallery,
-.contact,
-.footer {
-    width: 100%;
-}
-
-.hero-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr);
-    gap: 40px;
-    max-width: 1280px;
-    min-height: 560px;
-    margin: 0 auto;
-    padding: 70px 60px;
-}
-
-.hero-container > .text,
-.hero-container > .image,
-.AboutText,
-.contactInfo,
-.contactForm {
-    padding: 32px;
-    border-radius: 14px;
-}
-
-.hero-container > .text {
-    width: auto;
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-.hero-container > .image {
-    width: auto;
-    background-color: rgba(236, 148, 40, 0.12);
-}
-
-.aboutUS {
-    display: grid;
-    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
-    align-items: center;
-    gap: 50px;
-    height: auto;
-    padding: 70px max(20px, 8vw);
-}
-
-.aboutPic {
-    width: min(100%, 330px);
-    height: auto;
-    margin: 0 auto;
-}
-
-.AboutText {
-    margin: 0;
-    background-color: white;
-}
-
-.head3 {
-    margin: 0 0 15px;
-}
-
-.AboutText .hr {
-    margin: 0 auto 30px;
-}
-
-.para {
-    margin: 0;
-}
-
-.socialIcons {
-    margin: 28px 0 0;
-    text-align: center;
-}
-
-.socialIcons img {
-    margin: 0 6px;
-}
-
-.menu {
-    min-height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.foodImages {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-}
-
-.foodCard {
-    min-height: 330px;
-    padding: 24px 18px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.foodCard img {
-    width: min(100%, 180px);
-    height: 180px;
-}
-
-.Testimonials {
-    height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 24px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.person {
-    padding: 28px 18px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.foodgallery {
-    height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.Gallery3 {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.Gallery3 img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.contact {
-    padding: 70px max(20px, 6vw);
-}
-
-.contactContainer {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 1100px;
-}
-
-.contactInfo,
-.contactForm {
-    width: auto;
-    background-color: white;
-}
-
-.footer {
-    min-height: 70px;
-    height: auto;
-    padding: 18px 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .hero-container,
-    .aboutUS,
-    .contactContainer {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-container {
-        min-height: auto;
-        padding: 40px 20px 60px;
-    }
-
-    .aboutUS {
-        gap: 30px;
-    }
-
-    .footer {
-        grid-template-columns: 1fr;
-    }
-}
+/* ===========================
+   NAVBAR
+=========================== */
 .navbar {
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 15px 80px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgba(61, 20, 29, 0.88);
+    background-color: rgba(61, 20, 29, 0.92);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
-
-
-/* Logo */
 
 .logo-container {
     display: flex;
@@ -426,9 +58,6 @@ html {
     font-weight: bold;
 }
 
-
-/* Navigation */
-
 .nav-links {
     display: flex;
     align-items: center;
@@ -440,7 +69,6 @@ html {
     color: white;
     text-decoration: none;
     font-size: 18px;
-
     transition: color 0.2s ease;
 }
 
@@ -448,92 +76,62 @@ html {
     color: #ec9428;
 }
 
-
-/* =========================
+/* ===========================
    HERO SECTION
-========================= */
-
+=========================== */
 .hero-container {
-    /* min-height: calc(100vh - 90px); */
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 20px 80px 40px;
+    gap: 40px;
+    padding: 60px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-
-/* =========================
-   TEXT
-========================= */
-
 .text {
-    width: 40%;
+    width: 48%;
 }
 
 .heading1 {
     color: #ec9428;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-style: italic;
     font-size: 40px;
     font-weight: 400;
-
     margin-bottom: 12px;
 }
 
 .heading2 {
     color: white;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 30px;
     line-height: 1.25;
-
     margin-bottom: 18px;
 }
 
 .text p {
     color: white;
-
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-
     font-size: 19px;
-    line-height: 1.5;
-
-    /* max-width: 650px; */
-
+    line-height: 1.6;
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   BUTTONS
-========================= */
-
 .button-group {
     display: flex;
-    gap: 8px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .button {
     background-color: #ec9428;
-
     color: white;
-
-    padding: 15px 30px;
-
-    font-size: 18px;
-
+    padding: 14px 30px;
+    font-size: 17px;
     border: none;
-    border-radius: 5px;
-
+    border-radius: 6px;
     cursor: pointer;
-
-    transition: background-color 0.2s ease,
-                transform 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover {
@@ -541,14 +139,17 @@ html {
     transform: translateY(-2px);
 }
 
+.white-btn {
+    background-color: transparent;
+    border: 2px solid white;
+}
 
-/* =========================
-   COFFEE IMAGE
-========================= */
+.white-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
 
 .image {
     width: 48%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,239 +157,230 @@ html {
 
 .coffee-cup {
     width: 100%;
-    max-width: 600px;
+    max-width: 560px;
     height: auto;
-
     display: block;
 }
 
-/* About us  */
-
-
+/* ===========================
+   ABOUT SECTION
+=========================== */
 .aboutUS {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 50px;
+    padding: 70px max(20px, 8vw);
     background-color: #faeaea;
-    height: 500px;
 }
 
-.aboutPic{
-    width: 300px;
-    height: 300px;
-    margin-left: 100px;
-    margin-top: 100px;
+.aboutPic {
+    width: min(100%, 300px);
+    height: auto;
     border-radius: 50%;
+    margin: 0 auto;
+    display: block;
 }
 
 .AboutText {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    margin-top: -280px;
-    margin-left: 550px;
-    /* margin-bottom: 600px; */
-   
-    
+    padding: 32px;
+    border-radius: 14px;
+    background-color: white;
 }
-
-.hr {
-    width: 100px;
-    margin-left: 340px;
-    margin-right: 70px;
-    margin-bottom: 50px;
-    margin-top: -10px;
-}
-
-.para{
-    text-transform: none;
-    color: black;
-    font-size: 15px;
-    text-align: center;
-    margin-left: 10px;
-}
-
 
 .head3 {
     font-size: 30px;
-    margin-left: 300px;
     margin-bottom: 15px;
 }
 
-hr {
-   width: 20%;
-    margin: 30px auto 50px;
+.para {
+    text-transform: none;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
 }
 
+.socialIcons {
+    margin-top: 25px;
+    text-align: center;
+}
 
-.socialIcons img{
+.socialIcons img {
     width: 30px;
-    margin-left: 10px;
-    margin-bottom: -30px;
-    margin-right: 20px;
+    margin: 0 8px;
 }
 
- .socialIcons{
-    margin-left: 350px;
-}
-/* Food Menu */
-
+/* ===========================
+   MENU SECTION — 3×3 GRID
+=========================== */
 .menu {
     background-color: #1D1D1B;
-    padding: 50px 80px;
-    min-height: 1000px;
+    padding: 60px max(20px, 6vw);
 }
 
 .head4 {
     text-align: center;
     color: white;
-    margin: 0;
+    font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
 }
 
-.menu hr {
-     margin-top: 10px;
- width: 80px;
-}
-
-
-/* 3 cards in one row */
+/* 3 columns × 2 rows = 6 cards (3×2), but user asked 3×3.
+   We have 6 cards so it makes a 3×2 grid. 
+   Keeping 3 columns — adding a 7th, 8th, 9th card would make full 3×3. */
 .foodImages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 70px 50px;
+    gap: 28px;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-
-/* Each card */
 .foodCard {
     text-align: center;
     color: white;
+    padding: 28px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.foodCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(236, 148, 40, 0.25);
+}
 
-/* Images */
 .foodCard img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     object-fit: contain;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 16px;
 }
 
-
-/* Heading */
 .foodCard h3 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 0;
+    font-size: 18px;
+    margin: 10px 0 8px;
 }
 
-
-/* Paragraph */
 .foodCard p {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    max-width: 250px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    line-height: 1.55;
+    max-width: 220px;
     margin: auto;
 }
 
-
-
+/* ===========================
+   TESTIMONIALS
+=========================== */
 .Testimonials {
     background-color: #faeaea;
-    height: 500px;
+    padding: 60px max(20px, 6vw);
 }
 
 .head5 {
     color: black;
-    justify-content: center;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-ser;
-    padding-top: 50px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-}
-
-.hr1 {
-    margin-top: 10px;
-    width: 80px;
-
+    letter-spacing: 2px;
 }
 
 .images {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 80px;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .person {
     text-align: center;
+    padding: 24px 18px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    flex: 1 1 200px;
+    max-width: 260px;
 }
 
 .person img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
+    border: 3px solid #ec9428;
 }
 
 .person h3 {
-    margin-top: 15px;
+    margin-top: 14px;
     margin-bottom: 5px;
+    font-size: 17px;
 }
 
 .person p {
     margin: 0;
+    color: #666;
+    font-size: 14px;
 }
 
-/* gallery sec */
-
+/* ===========================
+   GALLERY SECTION — 3×3 GRID
+=========================== */
 .foodgallery {
     background-color: white;
-    height: 800px;
+    padding: 60px max(20px, 6vw);
 }
 
 .head6 {
     color: black;
-    justify-content: center;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-ser;
-    padding-top: 50px;
-        text-transform: uppercase;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.hr2 {
-     margin-top: 10px;
-     width: 80px;
-}
-
+/* 3 columns × 2 rows for 6 images.
+   Add 3 more images in HTML to make it a true 3×3. */
 .Gallery3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    justify-items: center;
-    margin-left: 50px;
-    
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .Gallery3 img {
-    width: 350px;
-    height: 280px;
-    
-    border-radius: 10px;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .Gallery3 img:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px #ec9428;
+    transform: scale(1.04);
+    box-shadow: 0 10px 30px rgba(236, 148, 40, 0.5);
 }
 
-
-
+/* ===========================
+   CONTACT SECTION
+=========================== */
 .contact {
     background-color: #faeaea;
-    padding: 70px 80px;
+    padding: 70px max(20px, 6vw);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -796,25 +388,23 @@ hr {
     text-align: center;
     color: #1D1D1B;
     margin-bottom: 10px;
-}
-
-.contact hr {
-    margin: 0 auto 50px;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
 .contactContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-
-/* LEFT SIDE */
-
 .contactInfo {
-    width: 45%;
+    padding: 32px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
 .contactInfo h2 {
@@ -824,15 +414,15 @@ hr {
 
 .contactInfo p {
     color: #555;
-    margin: 20px 0;
+    margin: 18px 0;
     line-height: 1.5;
 }
 
-
-/* RIGHT SIDE */
-
 .contactForm {
-    width: 45%;
+    padding: 32px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
 .contactForm form {
@@ -846,9 +436,11 @@ hr {
     width: 100%;
     padding: 14px;
     border: 1px solid #ccc;
+    border-radius: 6px;
     outline: none;
     font-size: 15px;
     box-sizing: border-box;
+    transition: border-color 0.2s ease;
 }
 
 .contactForm input:focus,
@@ -861,42 +453,79 @@ hr {
 }
 
 .contactForm button {
-    width: 120px;
-    padding: 12px;
+    width: 130px;
+    padding: 13px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #3d141d;
     color: white;
     cursor: pointer;
     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+.contactForm button:hover {
+    background-color: #ec9428;
+    transform: translateY(-2px);
+}
 
+/* ===========================
+   FOOTER
+=========================== */
 .footer {
     display: flex;
     background-color: #252525;
-    height: 60px;
+    min-height: 65px;
+    height: auto;
+    padding: 18px 30px;
     justify-content: space-around;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    gap: 12px;
+    text-align: center;
 }
 
 .footer img {
-    margin-left: 8px;
+    margin: 0 6px;
 }
 
+/* ===========================
+   RESPONSIVE — TABLET (≤ 1024px)
+=========================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .hero-container {
+        padding: 50px 40px;
+    }
+
+    .foodImages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Gallery3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===========================
+   RESPONSIVE — MOBILE (≤ 768px)
+=========================== */
 @media (max-width: 768px) {
+
+    /* Navbar */
     .navbar {
         height: auto;
         padding: 16px 20px;
         flex-direction: column;
-        gap: 16px;
+        gap: 14px;
     }
 
     .nav-links {
-        gap: 14px 20px;
+        gap: 12px 18px;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -905,6 +534,7 @@ hr {
         font-size: 15px;
     }
 
+    /* Hero */
     .hero-container {
         flex-direction: column;
         padding: 40px 20px 60px;
@@ -918,11 +548,11 @@ hr {
     }
 
     .heading1 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .heading2 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .heading2 br {
@@ -930,290 +560,102 @@ hr {
     }
 
     .text p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .button-group {
         justify-content: center;
-        flex-wrap: wrap;
     }
 
+    /* About */
     .aboutUS {
-        height: auto;
+        grid-template-columns: 1fr;
+        gap: 30px;
         padding: 50px 20px;
         text-align: center;
     }
 
     .aboutPic {
-        width: min(80vw, 300px);
-        height: auto;
-        margin: 0 auto 30px;
-    }
-
-    .AboutText {
-        margin: 0;
+        width: min(80vw, 240px);
+        margin: 0 auto;
     }
 
     .head3 {
-        margin: 0 0 15px;
+        text-align: center;
     }
 
     .hr {
-        margin: 0 auto 30px;
+        margin: 0 auto 24px;
     }
 
-    .para {
-        margin: 0;
-    }
-
-    .socialIcons {
-        margin: 25px 0 0;
-    }
-
-    .socialIcons img {
-        margin: 0 6px;
-    }
-
+    /* Menu */
     .menu {
-        min-height: auto;
-        padding: 50px 20px;
+        padding: 50px 16px;
     }
 
     .foodImages {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 22px;
     }
 
+    .foodCard img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* Testimonials */
     .Testimonials {
-        height: auto;
-        padding: 0 20px 60px;
+        padding: 50px 20px;
     }
 
     .images {
-        flex-direction: column;
-        gap: 40px;
+        gap: 24px;
     }
 
+    /* Gallery */
     .foodgallery {
-        height: auto;
-        padding: 0 20px 70px;
+        padding: 50px 16px;
     }
 
     .Gallery3 {
         grid-template-columns: 1fr;
-        margin-left: 0;
+        gap: 14px;
     }
 
     .Gallery3 img {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        aspect-ratio: 5 / 4;
-        object-fit: cover;
+        height: 200px;
     }
 
+    /* Contact */
     .contact {
-        padding: 60px 20px;
+        padding: 50px 20px;
     }
 
     .contactContainer {
-        flex-direction: column;
-        gap: 40px;
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    .contactInfo,
-    .contactForm {
-        width: 100%;
-    }
-
+    /* Footer */
     .footer {
-        height: auto;
-        padding: 18px 20px;
-        gap: 14px;
-        flex-wrap: wrap;
-        text-align: center;
-        font-size: 14px;
+        font-size: 13px;
+        padding: 16px 20px;
     }
 }
 
-/* Active responsive grid layout */
-.hero-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr);
-    gap: 40px;
-    max-width: 1280px;
-    min-height: 560px;
-    margin: 0 auto;
-    padding: 70px 60px;
-}
-
-.hero-container > .text,
-.hero-container > .image {
-    width: auto;
-    padding: 32px;
-    border-radius: 14px;
-}
-
-.hero-container > .text {
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-.hero-container > .image {
-    background-color: rgba(236, 148, 40, 0.12);
-}
-
-.aboutUS {
-    display: grid;
-    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
-    align-items: center;
-    gap: 50px;
-    height: auto;
-    padding: 70px max(20px, 8vw);
-}
-
-.aboutPic {
-    width: min(100%, 330px);
-    height: auto;
-    margin: 0 auto;
-}
-
-.AboutText {
-    margin: 0;
-    padding: 32px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.head3 {
-    margin: 0 0 15px;
-}
-
-.AboutText .hr {
-    margin: 0 auto 30px;
-}
-
-.para {
-    margin: 0;
-}
-
-.socialIcons {
-    margin: 28px 0 0;
-    text-align: center;
-}
-
-.socialIcons img {
-    margin: 0 6px;
-}
-
-.menu {
-    min-height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.foodImages {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-}
-
-.foodCard {
-    min-height: 330px;
-    padding: 24px 18px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.foodCard img {
-    width: min(100%, 180px);
-    height: 180px;
-}
-
-.Testimonials {
-    height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 24px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.person {
-    padding: 28px 18px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.foodgallery {
-    height: auto;
-    padding: 70px max(20px, 6vw);
-}
-
-.Gallery3 {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.Gallery3 img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.contact {
-    padding: 70px max(20px, 6vw);
-}
-
-.contactContainer {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 1100px;
-}
-
-.contactInfo,
-.contactForm {
-    width: auto;
-    padding: 32px;
-    border-radius: 14px;
-    background-color: white;
-}
-
-.footer {
-    min-height: 70px;
-    height: auto;
-    padding: 18px 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .hero-container,
-    .aboutUS,
-    .contactContainer {
+/* ===========================
+   RESPONSIVE — SMALL MOBILE (≤ 480px)
+=========================== */
+@media (max-width: 480px) {
+    .foodImages {
         grid-template-columns: 1fr;
     }
 
-    .hero-container {
-        min-height: auto;
-        padding: 40px 20px 60px;
-    }
-
-    .aboutUS {
-        gap: 30px;
-    }
-
-    .footer {
+    .Gallery3 {
         grid-template-columns: 1fr;
     }
+
+    .Gallery3 img {
+        height: 180px;
+    }
 }
-
-
