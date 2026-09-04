@@ -25,7 +25,10 @@ html {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #3d141d;
+    background-color: rgba(61, 20, 29, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 
